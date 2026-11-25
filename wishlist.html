@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attire Home</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <!--custom css wishlist-->
+    <link rel = "stylesheet" href = "wishlist.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/BnG_Logo_Background.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2" >Bakpao Gemoy</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <a href="checkout.html">
+                    <button type = "button" class = "btn position-relative">
+                        <i class = "fa fa-shopping-cart"  a href = "wishlist.html"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                    </button>
+                </a>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart" ></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">Special</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+ <!--Body Content-->
+ <div id="page-content">
+    <!--Page Title-->
+    <div class="page section-header text-center" style="padding-top: 100px;">
+        <div class="page-title py-3">
+            <div class="wrapper py-5"><h1 class="page-width ">Wish List</h1></div>
+          </div>
+    </div>
+    <!--End Page Title-->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col">
+                <form action="#">
+                    <div class="wishlist-table table-content table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="product-name text-center alt-font">Remove</th>
+                                    <th class="product-price text-center alt-font">Images</th>
+                                    <th class="product-name alt-font">Product</th>
+                                    <th class="product-price text-center alt-font">Unit Price</th>
+                                    <th class="stock-status text-center alt-font">Stock Status</th>
+                                    <th class="product-subtotal text-center alt-font">Add to Cart</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-remove text-center" valign="middle"><a><i class="icon icon anm anm-times-l"></i>✖</a></td>
+                                    <td class="product-thumbnail text-center">
+                                        <a href="#"><img class="image" src="images/15.png" alt="" title="" /></a>
+                                    </td>
+                                    <td class="product-name"><h4 class="no-margin"><a>Shoes Rini </a></h4></td>
+                                    <td class="product-price text-center"><div class="amount">$165.00</div></td>
+                                    <td class="stock text-center">
+                                        <div class="amount">in stock</div>
+                                    </td>
+                                    <td class="product-subtotal text-center"><button type="button" class="btn btn-small">Add To Cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-remove text-center" valign="middle"><a><i class="icon icon anm anm-times-l"></i>✖</a></td>
+                                    <td class="product-thumbnail text-center">
+                                        <a href="#"><img class="image"src="images/18.png" alt="" title="" /></a>
+                                    </td>
+                                    <td class="product-name"><h4 class="no-margin"><a>Sueded Cotton Pant in Khaki</a></h4></td>
+                                    <td class="product-price text-center"><div class="amount ">$150.00</div></td>
+                                    <td class="stock text-center">
+                                        <div class="amount" style="color: red;">out of stock</div>
+                                    </td>
+                                    <td class="product-subtotal text-center"><button type="button" class="btn btn-small" disabled >Add To Cart</button></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-remove text-center" valign="middle"><a><i class="icon icon anm anm-times-l"></i>✖</a></td>
+                                    <td class="product-thumbnail text-center">
+                                        <a href="#"><img class="image"src="images/13.png" alt="" title="" /></a>
+                                    </td>
+                                    <td class="product-name"><h4 class="no-margin"><a>Woven Solid Midi Shirt Dress</a></h4></td>
+                                    <td class="product-price text-center"><div class="amount">$150.00</div></td>
+                                    <td class="stock text-center">
+                                        <div class="amount">in stock</div>
+                                    </td>
+                                    <td class="product-subtotal text-center"><button type="button" class="btn btn-small">Add To Cart</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </form>                   
+               </div>
+        </div>
+    </div>
+    
+</div>
+
+<div class="ccontainer">
+
+</div>
+<!--End Body Content-->
+
+    <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Bakpao Gemoy</a>
+                    <p class = "text-white text-muted mt-3">Welcome to Bakpao Gemoy. We offer unique, high-quality, and sustainable fashion pieces. Discover your style with us today.</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Universitas Kristen Satya Wacana
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            bg123@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +9786 6776 236
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>

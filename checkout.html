@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Bakpao Gemoy</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel = "stylesheet" href = "checkout.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/BnG_Logo_Background.png" alt = "site icon">
+                <span class = "text-uppercase fw-lighter ms-2">Bakpao Gemoy</span>
+            </a>
+
+            <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                </button>
+                <a href="wishlist.html">
+                    <button type = "button" class = "btn position-r5elative">
+                        <i class = "fa fa-heart"></i>
+                        <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+                    </button>
+                </a>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html">Home</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html#collection">collection</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html#special">Special</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "index.html#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+     
+    <div id="page-content">
+    	<!--Page Title-->
+    	<div class="page section-header text-center">
+			<div class="page-title">
+        		<div class="wrapper"><h1 class="page-width">Shopping Cart</h1></div>
+      		</div>
+		</div>
+        <!--End Page Title-->
+        
+        <div class="container">
+        	<div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col">
+                	<div class="alert alert-success text-uppercase" role="alert">
+						<i class="icon anm anm-truck-l icon-large"></i> &nbsp;<strong>🛒 Congratulations!</strong> You've got free shipping!
+					</div>
+                	<form action="#" method="post" class="cart style2">
+                		<table style="width:100%">
+                            <thead class="cart__row cart__header">
+                                <tr>
+                                    <th colspan="2" class="text-center">Product</th>
+                                    <th class="text-center">Price</th>
+                                    <th class="text-center">Quantity</th>
+                                    <th class="text-right">Total</th>
+                                    <th class="action">&nbsp;</th>
+                                </tr>
+                            </thead>
+                    		<tbody>
+                                <tr class="cart__row border-bottom line1 cart-flex border-top">
+                                    <td class="cart__image-wrapper cart-flex-item">
+                                        <a href="#"><img class="cart__image" src="images/10.png" alt="Elastic Waist Dress - Navy / Small"></a>
+                                    </td>
+                                    <td class="cart__meta small--text-left cart-flex-item">
+                                        <div class="list-view-item__title">
+                                            <a>Yor Blue Pants </a>
+                                            <span style="color: gainsboro"> <br>Color: Denim<br>Size: Medium<br></span>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price-wrapper cart-flex-item">
+                                        <span class="money">$45.50</span>
+                                    </td>
+                                    <td class="cart__update-wrapper cart-flex-item text-right">
+                                        <div class="cart__qty text-center">
+                                            <div class="qtyField">
+                                                <a class="qtyBtn minus"><i class="icon icon-minus"></i>-</a>
+                                                <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
+                                                <a class="qtyBtn plus"><i class="icon icon-plus"></i>+</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right small--hide cart-price">
+                                        <div><span class="money">$45.50</span></div>
+                                    </td>
+                                    <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove">✖</a></td>
+                                </tr>
+                                <tr class="cart__row border-bottom line1 cart-flex border-top">
+                                    <td class="cart__image-wrapper cart-flex-item">
+                                        <a href="#"><img class="cart__image" src="images/18.png" alt="3/4 Sleeve Kimono Dress"></a>
+                                    </td>
+                                    <td class="cart__meta small--text-left cart-flex-item">
+                                        <div class="list-view-item__title">
+                                            <a>Rizkee Sandals </a>
+                                            <span style="color: gainsboro"> <br>Color: Black<br>Size: 43<br></span>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price-wrapper cart-flex-item">
+                                        <span class="money">$50.50</span>
+                                    </td>
+                                    <td class="cart__update-wrapper cart-flex-item text-right">
+                                        <div class="cart__qty text-center">
+                                            <div class="qtyField">
+                                                <a class="qtyBtn minus"><i class="icon icon-minus"></i>-</a>
+                                                <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
+                                                <a class="qtyBtn plus"><i class="icon icon-plus"></i>+</a>
+                                            </div>
+                                        </div>  
+                                    </td>
+                                    <td class="text-right small--hide cart-price">
+                                        <div><span class="money">$50.50</span></div>
+                                    </td>
+                                    <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove">✖<i class="icon icon anm anm-times-l"></i></a></td>
+                                </tr>
+                                <tr class="cart__row border-bottom line1 cart-flex border-top">
+                                    <td class="cart__image-wrapper cart-flex-item">
+                                        <a href="#"><img class="cart__image" src="images/13.png" alt="Minerva Dress black"></a>
+                                    </td>
+                                    <td class="cart__meta small--text-left cart-flex-item">
+                                        <div class="list-view-item__title">
+                                            <a>Ocsi Dress</a>
+                                            <span style="color: gainsboro"> <br>Color: Grey<br>Size: 2XL<br></span>
+                                        </div>
+                                    </td>
+                                    <td class="cart__price-wrapper cart-flex-item">
+                                        <span class="money">$150.00</span>
+                                    </td>
+                                    <td class="cart__update-wrapper cart-flex-item text-right">
+                                        <div class="cart__qty text-center">
+                                            <div class="qtyField">
+                                                <a class="qtyBtn minus"><i class="icon icon-minus"></i>-</a>
+                                                <input class="cart__qty-input qty" type="text" name="updates[]" id="qty" value="1" pattern="[0-9]*">
+                                                <a class="qtyBtn plus"><i class="icon icon-plus"></i>+</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right small--hide cart-price">
+                                        <div><span class="money">$150.00</span></div>
+                                    </td>
+                                    <td class="text-center small--hide"><a href="#" class="btn btn--secondary cart__remove">✖<i class="icon icon anm anm-times-l"></i></a></td>
+                                </tr>
+                            </tbody>
+                    		<tfoot>
+                                <tr>
+                                    <td colspan="3" class="text-left"><a class="btn btn-secondary btn--small cart-continue" href="index.html">Continue shopping</a></td>
+                                    <td colspan="3" class="text-right">
+	                                    <a type="submit" name="clear" class="btn btn-secondary btn--small  cart-continue">Clear Cart</a>
+                                    	<a type="submit" name="update" class="btn btn-secondary btn--small cart-continue ml-2">Update Cart</a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                    </table> 
+                    </form>                   
+               	</div>
+
+
+                <div class="container mt-4">
+                    <div class="row">
+                    	<div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+                        	<h5>Discount Codes</h5>
+                            <form action="#" method="post">
+                            	<div class="form-group">
+                                    <label for="address_zip">Enter your coupon code if you have one.</label> 
+                                    <input type="text" name="coupon" >
+                                </div>
+                                <div class="actionRow">
+                                    <div><input type="button" class="btn btn-secondary btn--small" value="Apply Coupon"></div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 mb-4">
+                        	<h5>Estimate Shipping and Tax</h5>
+							<form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="address_country">Country</label>
+                                    <select id="address_country" name="address[country]" data-default="United States">
+            
+                                        <option value="---" data-provinces="[]">---</option>
+                                         <option value="Indonesia" data-provinces="[]">indonesia</option>
+                                         <option value="United Kingdom" data-provinces="[]">United Kingdom</option>
+                                        <option value="United States">United States</option>
+                                    </select>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label>State</label>
+                                    <select id="address_province" name="address[province]" data-default="Blotongan">
+                                     <option value="---" >---</option>
+                                      <option value="Blotongan">Blotongan</option>
+                                      <option value="Kridanggo">Kridanggo</option>
+                                      <option value="Sidorejo">Sidorejo</option>
+                                      <option value="Domas">Domas</option>
+                                      <option value="Salatiga 🛇">Salatiga 🛇</option>
+                                      <option value="Kemiri">Kemiri</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="address_zip">Postal/Zip Code</label>
+                                    <input type="text" id="address_zip" name="address[zip]">
+                                </div>
+    
+                                <div class="actionRow">
+                                    <div><input type="button" class="btn btn-secondary btn--small" value="Calculate shipping"></div>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 cart__footer">
+                            <div class="solid-border">	
+                              <div class="row border-bottom pb-2">
+                                
+                                <span class="col-12 col-sm-6 cart__subtotal-title">Subtotal</span>
+                                <span class="col-12 col-sm-6 text-right"><span class="money">$246.00</span></span>
+                              </div>
+                              <div class="row border-bottom pb-2 pt-2">
+                                <span class="col-12 col-sm-6 cart__subtotal-title">Tax</span>
+                                <span class="col-12 col-sm-6 text-right">$24.60</span>
+                              </div>
+                              <div class="row border-bottom pb-2 pt-2">
+                                <span class="col-12 col-sm-6 cart__subtotal-title">Shipping</span>
+                                <span class="col-12 col-sm-6 text-right">Free shipping</span>
+                              </div>
+                              <div class="row border-bottom pb-2 pt-2">
+                                <span class="col-12 col-sm-6 cart__subtotal-title"><strong>Grand Total</strong></span>
+                                <span class="col-12 col-sm-6 cart__subtotal-title cart__subtotal text-right"><span class="money">$270.60</span></span>
+                              </div>
+                              <div class="cart__shipping">Shipping &amp; taxes calculated at checkout</div>
+                              <p class="cart_tearm">
+                                <label>
+                                  <input type="checkbox" name="tearm" class="checkbox" value="tearm" required="">
+                                  I agree with the terms and conditions
+								</label>
+                              </p>
+                              <div><input type="button" class="btn btn--small-wide checkout" value="Proceed To Checkout"></div>
+                              <div class="paymnet-img"><img src="images/payment.png" alt="Payment"></div>
+                            </div>
+        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+         <!-- footer -->
+    <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Bakpao Gemoy</a>
+                    <p class = "text-white text-muted mt-3">Welcome to Bakpao Gemoy. We offer unique, high-quality, and sustainable fashion pieces. Discover your style with us today.</p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#" class = "text-white text-decoration-none text-muted">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Universitas Kristen Satya Wacana
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            bg123@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            +9786 6776 236
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+        
+
+</body>
+</html>

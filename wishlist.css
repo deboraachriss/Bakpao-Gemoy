@@ -1,0 +1,33 @@
+.page-section-header {
+    padding-top: 100px;
+}
+
+.image {
+    margin: 4px;
+    height: 150px;
+    width: 130px;
+}
+
+.no-margin {
+    font-size: 10pt;
+    text-align: left;
+    justify-content: center;
+    margin-top : 70px;
+    
+}
+
+.btn-small{
+    margin-top : 55px;
+    font-size: 10pt;
+}
+
+.amount {
+    margin-top: 65px;
+    font-size: 10pt;
+}
+
+.ccontainer {
+    background-color: white;
+    height: 150px;
+    width: 100%;
+}
