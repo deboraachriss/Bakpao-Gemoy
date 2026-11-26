@@ -11,6 +11,6 @@ A responsive storefront prototype for a steamed bun business.
 HTML, CSS, JavaScript, Bootstrap 5.
 
 ## Demo
-https://deboraachriss.github.io/bakpao-gemoy/ (after GitHub Pages is enabled).
+https://deboraachriss.github.io/Bakpao-Gemoy/index.html
 
 Open `index.html` locally to preview. Authentication and checkout are frontend prototypes, not a production service.
